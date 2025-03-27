@@ -4,17 +4,17 @@ import type { LayoutLoad } from '../$types';
 export const load: LayoutLoad = ({ params }) => {
     let section:string = '';
     if (params.section === 'circulation') {
-        section = 'Circulation';
+        section = 'Section';
     } else if (params.section === 'the-learning-commons') {
-        section = 'The Learning Commons';
+        section = 'Section';
     } else if (params.section === 'ground-floor-services') {
-        section = 'Ground Floor Service';
+        section = 'Section';
     }
 
 	if (section) {
         if (params.library === 'engglib1') {
             return {
-                libraryName: 'Library 1',
+                libraryName: 'Building',
                 libraryBuilding: ' Building, ',
                 libraryStreet: 'Street, UP Diliman',
                 librarySrc: '../../../photos/placeholder.png',
@@ -22,7 +22,7 @@ export const load: LayoutLoad = ({ params }) => {
             };
         } else if (params.library === 'engglib2') {
             return {
-                libraryName: 'Library 2',
+                libraryName: 'Building',
                 libraryBuilding: 'Building,',
                 libraryStreet: 'Street, UP Diliman',
                 librarySrc: '../../../photos/placeholder.png',
