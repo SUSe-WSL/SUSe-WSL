@@ -54,7 +54,7 @@
 
 		<!-- Register/Login -->
 		<div class="flex h-full w-full flex-col items-center justify-center xl:w-[80%]">
-			<Loading loadingText={'Thanks for using SUSê!'} loading={Boolean($navigating)} />
+			<Loading loadingText={'Loading'} loading={Boolean($navigating)} />
 			<slot></slot>
 			<p class="fixed bottom-4 p-4">Made with 🧡 by Zarah Floro and Allaine Tan</p>
 		</div>

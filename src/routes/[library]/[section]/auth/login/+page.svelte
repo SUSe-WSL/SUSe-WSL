@@ -203,7 +203,7 @@
 				checkAdminRfid();
 			} else {
 				if (!$PCInfoStore.isVerified) {
-					toast.error('PC not allowed to access SUSê.');
+					toast.error('PC not allowed to access website.');
 					return;
 				}
 				checkRfidCount++;
@@ -216,7 +216,7 @@
 		// Listens to input in the UP mail field
 		if (event.key === 'Enter') {
 			if (!$PCInfoStore.isVerified) {
-				toast.error('PC not allowed to access SUSê.');
+				toast.error('PC not allowed to access website.');
 				return;
 			}
 			checkUsernameCount++;
@@ -275,7 +275,7 @@
                         toast.error(res.error)
                     } else {
                         $PCInfoStore.isVerified = true;
-                        toast.success('PC approved to access SUSê.')
+                        toast.success('PC approved to access website.')
                     }
                 })
             }

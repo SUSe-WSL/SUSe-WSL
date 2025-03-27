@@ -23,7 +23,7 @@ export const studentRoutes: Route[] = [
 		url: './link-rfid'
 	},
 	{
-		title: 'About SUSê',
+		title: 'About',
 		id: 'about',
 		icon: Icons.Info,
 		url: ''

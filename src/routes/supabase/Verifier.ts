@@ -38,7 +38,7 @@ export async function verifyPC(): Promise<{ error: string }> {
     }
     else if (data.length && !data[0].is_approved) {
         return {
-            error: 'PC not approved to access SUSê.'
+            error: 'PC not approved to access website.'
         }
     }
     else if (data.length == 0) {
