@@ -14,18 +14,18 @@ export const load: LayoutLoad = ({ params }) => {
 	if (section) {
         if (params.library === 'engglib1') {
             return {
-                libraryName: 'Engineering Library I',
-                libraryBuilding: ' 2/F Melchor Hall, ',
-                libraryStreet: 'S. Osmeña Avenue, UP Diliman',
-                librarySrc: '../../../photos/MH.jpg',
+                libraryName: 'Library 1',
+                libraryBuilding: ' Building, ',
+                libraryStreet: 'Street, UP Diliman',
+                librarySrc: '../../../photos/placeholder.png',
                 librarySection: section
             };
         } else if (params.library === 'engglib2') {
             return {
-                libraryName: 'Engineering Library II',
-                libraryBuilding: 'G/F UP Alumni Engineers Centennial Hall,',
-                libraryStreet: 'Velasquez St., UP Diliman',
-                librarySrc: '../../../photos/AECH.jpeg',
+                libraryName: 'Library 2',
+                libraryBuilding: 'Building,',
+                libraryStreet: 'Street, UP Diliman',
+                librarySrc: '../../../photos/placeholder.png',
                 librarySection: section
             };
         }

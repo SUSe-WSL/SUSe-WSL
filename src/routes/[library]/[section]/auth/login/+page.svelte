@@ -331,7 +331,7 @@
 				<div class="flex w-full flex-col gap-4 text-center">
 					<h1 class="text-5xl font-medium">Tap your UP ID to<br />login or register</h1>
 					<h2 class="text-lg font-normal">
-						Avail EnggLib services using SUSê by tapping your RFID!
+						Login to borrow/return items by tapping your RFID!
 					</h2>
 				</div>
 				<div class="flex flex-col gap-2">
@@ -372,7 +372,7 @@
 			<div class="flex w-full flex-col gap-8">
 				<div class="flex w-full flex-col gap-4 text-center">
 					<h1 class="text-5xl font-medium">Tap your UP ID to<br />login or register</h1>
-					<h2 class="text-lg font-normal">Login as an admin in SUSê by tapping your RFID!</h2>
+					<h2 class="text-lg font-normal">Login as an admin in by tapping your RFID!</h2>
 				</div>
 				<div class="flex flex-col gap-2">
 					<Input
@@ -412,7 +412,7 @@
 				<div class="flex w-full flex-col gap-4 text-center">
 					<h1 class="max-w-[500px] text-5xl font-medium">Enter your UP Mail</h1>
 					<h2 class="text-lg font-normal">
-						Avail EnggLib services using SUSê by entering your UP Mail!
+						Login to borrow/return items by entering your UP Mail!
 					</h2>
 				</div>
 

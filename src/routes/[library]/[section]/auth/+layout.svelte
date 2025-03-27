@@ -38,18 +38,18 @@
 				class="h-full w-auto"
 				alt="University of the Philippines logo"
 			/>
-			<img
-				src="../../../logos/dcs-logo.png"
-				class="h-full w-auto"
-				alt="Department of Computer Science logo"
-			/>
 			<button class="cursor-default" on:click={checkAdminLogin}>
 				<img
-					src="../../../logos/engglib-logo.png"
+					src="../../../logos/dcs-logo.png"
 					class="h-full w-auto"
-					alt="Engineering Library logo"
+					alt="Department of Computer Science logo"
 				/>
 			</button>
+			<img
+				src="../../../photos/placeholder.png"
+				class="h-full w-auto"
+				alt="placeholder logo"
+			/>
 		</div>
 
 		<!-- Register/Login -->
