@@ -16,34 +16,7 @@
 
 	const surveyAnswers: { [key: string]: string } = {
 		q1_1_1: '',
-		q1_1_2: '',
-		q1_1_3: '',
-		q1_1_4: '',
-
-		q1_2_1: '',
-		q1_2_2: '',
-
-		q2_1: '',
-		q2_2: '',
-		q2_3: '',
-		q2_4: '',
-
-		q3_1_1: '',
-		q3_1_2: '',
-		q3_1_3: '',
-		q3_1_4: '',
-		q3_1_5: '',
-
-		q3_2_1: '',
-		q3_2_2: '',
-		q3_2_3: '',
-
-		q4_1: '',
-		q4_2: '',
-		q4_3: '',
-
-		q5_1: '',
-		q5_2: ''
+        q5_2: '',
 	};
 
 	const surveyQuestions: Array<{
@@ -52,55 +25,9 @@
 		completeQuestions: number;
 	}> = [
 		{
-			category: 'User Interface & User Experience',
+			category: 'Category',
 			questions: {
-				q1_1_1: 'SUSê has a simple but modern layout and design.',
-				q1_1_2: 'SUSê has a pleasant color palette.',
-				q1_1_3: 'SUSê has enough content displayed to explain its functions.',
-				q1_1_4: 'Overall, SUSê has consistent organization and easy-to-read content.',
-
-				q1_2_1: 'SUSê is easy to navigate.',
-				q1_2_2: 'SUSê has clear labels on buttons and links.'
-			},
-			completeQuestions: 0
-		},
-		{
-			category: 'Novelty & Need',
-			questions: {
-				q2_1: 'SUSê is a needed upgrade in Engineering Libraries services.',
-				q2_2: 'SUSê should be available in other sections of the Engineering Libraries. (SUSê is only available in EnggLib 1 Circulation and GFS, and EnggLib 2 Circulation)',
-				q2_3: 'SUSê gives more utility to my UP ID.',
-				q2_4: 'SUSê is a novelty in Engineering Libraries. (Novelty: different, new, unusual)'
-			},
-			completeQuestions: 0
-		},
-		{
-			category: 'End-User Satisfaction',
-			questions: {
-				q3_1_1:
-					'Logging in using my UP ID is faster and easier than answering Google Registration Forms manually.',
-				q3_1_2: 'SUSê v2 has better design and functionality than SUSê v1.',
-				q3_1_3:
-					'SUSê v2 is faster and easier to use than SUSê v1. (N/A if you did not use SUSê in 1st Sem 24-25)',
-				q3_1_4:
-					'SUSê v1 captured the basic features for registration and availing a miscellaneous service, but SUSê v2 improved these features.  (N/A if you did not use SUSê in 1st Sem 24-25).',
-				q3_1_5:
-					'SUSê still has room for improvement. (N/A if you did not use SUSê in 1st Sem 24-25)',
-
-				q3_2_1:
-					'SUSê improved my experience when availing miscellaneous in the Engineering Libraries.',
-				q3_2_2: 'I still prefer answering Google Forms when availing Engineering Library miscellaneous services.',
-				q3_2_3:
-					'I would prefer to use SUSê from now on when availing miscellaneous services in the Engineering Libraries.'
-			},
-			completeQuestions: 0
-		},
-		{
-			category: 'Accessibility',
-			questions: {
-				q4_1: 'SUSê has clear contrast between text and background, making it easier to read the content.',
-				q4_2: 'SUSê can be used easily with a keyboard only. (N/A if you use mouse and keyboard to interact with SUSê)',
-				q4_3: 'SUSê can be used with a screen reader and has alternative text to images. (N/A if you do not use screen readers for SUSê)'
+				q1_1_1: "Question"
 			},
 			completeQuestions: 0
 		}
@@ -195,7 +122,7 @@
 	<div class="flex w-full flex-col gap-4">
 		<h1 class="text-3xl font-medium">We would love to hear your thoughts!</h1>
 		<p class="text-slate-500">
-			SUSê is built by students, for the students. Any feedback makes SUSê better.
+			Any feedback makes this website better.
 		</p>
 	</div>
 
@@ -210,15 +137,9 @@
 			<Card.Root>
 				<Card.Header>
 					<Card.Title id="survey-title">Survey</Card.Title>
-					<Card.Description
-						>Zarah Floro and Nina Sapitula Computer Science Web Science Laboratory (WSL) seniors conducting a survey on the factors affecting
-						the success of a website. Please indicate your disagreement/agreement with the following
-						statements to complete the survey. Your answers would greatly contribute to their
-						research!
-                        <br> <br>
-                        No information from you will be collected for this survey other than your answers. 
-                        You consent to your answers being recorded and analyzed once you submit this form.</Card.Description
-					>
+					<Card.Description>
+                    Description
+                    </Card.Description>
 				</Card.Header>
 
 				<Card.Content class="flex flex-col">
@@ -274,7 +195,7 @@
                                 <div class="flex flex-col gap-6">
                                     <div class="grid w-full gap-1.5">
                                         <Label for="feedback" class="text-base"
-                                            >How satisfied are you with SUSê overall?</Label
+                                            >How satisfied are you with the website overall?</Label
                                         >
                                         {#if !completeSurvey && !surveyAnswers.q5_1}
                                             <p class="text-sm text-destructive">
@@ -286,7 +207,7 @@
     
                                     <div class="grid w-full gap-1.5">
                                         <Label for="feedback" class="text-base"
-                                            >Is there anything you would like to tell the developers about SUSê? (Optional)</Label
+                                            >Is there anything you would like to tell the developers about the website? (Optional)</Label
                                         >
                                         <Textarea
                                             placeholder="Your response may be a feature request or words of encouragement."
@@ -337,7 +258,7 @@
 				<Card.Header>
 					<Card.Title>Bug Report</Card.Title>
 					<Card.Description>
-						We are working hard to make SUSê better! We appreciate any bugs 🐛 that you can find.
+						We are working hard to make this website better! We appreciate any bugs 🐛 that you can find.
 					</Card.Description>
 				</Card.Header>
 
@@ -384,8 +305,7 @@
 			<Dialog.Description>
 				<div class="place-items-center">
 					<p>
-						We are very happy of SUSê's journey and we
-						are glad you are part of it. Thank you for taking the time to answer our survey! 🧡
+						Thank you for taking the time to answer our survey!
 					</p>
 
 					<img alt="Cat jumping happily" src={'../../../misc/happy-cat.gif'} />
