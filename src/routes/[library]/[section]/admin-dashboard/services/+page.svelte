@@ -24,7 +24,7 @@
 		{#if $ServiceTableStore}
 			{#key $ServiceTableStore}
 				<div class="w-[95%]">
-					<h1 class="pt-10 text-3xl font-medium">Services</h1>
+					<h1 class="pt-10 text-3xl font-medium">Services/Items</h1>
 					<DataTable data={$ServiceTableStore} {columns} {initialSort} />
 				</div>
 			{/key}

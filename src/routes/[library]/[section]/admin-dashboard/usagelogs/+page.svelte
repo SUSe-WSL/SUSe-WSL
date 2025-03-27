@@ -23,7 +23,7 @@
 		{#if $UsageLogTableStore}
 			{#key $UsageLogTableStore}
 				<div class="w-[95%]">
-					<h1 class="pt-10 text-3xl font-medium">Usage Logs</h1>
+					<h1 class="pt-10 text-3xl font-medium">Logs</h1>
 					<DataTable data={$UsageLogTableStore} {columns} {initialSort} />
 				</div>
 			{/key}

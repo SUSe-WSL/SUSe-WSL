@@ -23,7 +23,7 @@
 		{#if $UserTableStore}
 			{#key $UserTableStore}
 				<div class="w-[95%]">
-					<h1 class="pt-10 text-3xl font-medium">Library Users</h1>
+					<h1 class="pt-10 text-3xl font-medium">Users</h1>
 					<DataTable data={$UserTableStore} {columns} {initialSort} />
 				</div>
 			{/key}
